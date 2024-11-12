@@ -12,6 +12,7 @@ class Call{
     public ?string $dateTime;
 
     public $database;
+    public $table;
 
     public function __construct($id="null",$room="",$issue="",$dateTime="null"){
     
@@ -23,5 +24,17 @@ class Call{
         if (!$this->database) {
             $this->database = new Database();
         }
+    }
+
+    public function all(){
+        $query = $this->database->sql->("SELECT * from {this->table)");
+        $callArray = $query->fetchAll();
+
+        $callList = [];
+        foreach($callArray as $Call);{
+            $callItem = new Call($call["id"],$call["room"],$call["issue"],$call["dateTime"]);
+            array_push($callArray,$callList);
+        }
+        return $callList;
     }
 }
