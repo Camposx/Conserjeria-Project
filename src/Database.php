@@ -10,7 +10,7 @@ class Database{
     public function __construct()
     {
         try{
-            $this->mysql = new getConnection();
+            $this->mysql = $this->getConnection();
         }
         catch(PDOException $e){
             echo "Connection failed with DDBB : ".$e->getMessage();
@@ -21,7 +21,7 @@ class Database{
         $host = "localhost";
         $user = "root";
         $password = "";
-        $database = "";
+        $database = "conserjeriaproject";
         $charset = "utf-8";
 
         $options = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
