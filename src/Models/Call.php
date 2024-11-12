@@ -26,14 +26,17 @@ class Call{
         }
     }
 
+
     public function all(){
-        $query = $this->database->sql->("SELECT * from {this->table)");
+        $query = $this->database->mysql->query("SELECT * from {this->table}");
         $callArray = $query->fetchAll();
 
         $callList = [];
+
+
         foreach($callArray as $Call);{
             $callItem = new Call($call["id"],$call["room"],$call["issue"],$call["dateTime"]);
-            array_push($callArray,$callList);
+            array_push($CallList,$callItem);
         }
         return $callList;
     }
