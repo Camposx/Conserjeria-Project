@@ -24,6 +24,7 @@
                                 <td>{$call->room}</td>
                                 <td>{$call->issue}</td>
                                 <td>{$call->dateTime}</td>
+                                <a href:'?action=delete&id={$call->id}'><i class='bi bi-trash-fill'></i></a>
                             </tr>";
                     }
                 ?>                
