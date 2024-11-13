@@ -12,7 +12,7 @@ class Call{
     public ?string $dateTime;
 
     public $database;
-    public $table;
+    public $table = "problems";
 
     public function __construct($id=null, $room="",$issue="", $dateTime=null){
     
@@ -36,7 +36,7 @@ class Call{
 
         foreach($callArray as $call);{
             $callItem = new Call($call["id"],$call["room"],$call["issue"],$call["dateTime"]);
-            array_push($CallList,$callItem);
+            array_push($callList,$callItem);
         }
         return $callList;
     }
