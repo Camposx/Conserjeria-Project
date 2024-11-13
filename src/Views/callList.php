@@ -6,6 +6,13 @@
         require_once("Components/header.php");
     ?>
     <main>
+
+    <div>
+        <a href="?action=create">
+            <button class="btn btn-primary" type="button">Add issue</button>
+        </a>
+    </div>
+
     <table class="table">
             <thead>
                 <tr>
