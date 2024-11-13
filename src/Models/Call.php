@@ -14,7 +14,7 @@ class Call{
     public $database;
     public $table;
 
-    public function __construct($id="null",$room="",$issue="",$dateTime="null"){
+    public function __construct($id=null, $room="",$issue="", $dateTime=null){
     
         $this->id = $id;
         $this->room = $room;
@@ -28,7 +28,7 @@ class Call{
 
 
     public function all(){
-        $query = $this->database->mysql->query("SELECT * from {this->table}");
+        $query = $this->database->mysql->query("SELECT * FROM {$this->table}");
         $callArray = $query->fetchAll();
 
         $callList = [];
