@@ -6,13 +6,13 @@ use App\Core\View;
 class CallController{
     public function __construct(){
 
-        if (isset($_Get["action"]) && ($_GET["action"] == "delete"))
+        if (isset($_GET["action"]) && ($_GET["action"] == "delete"))
         {
             $this->delete($_GET["id"]);
             return;
         }
 
-        if (isset($_Get["action"]) && ($_GET["action"] == "create"))
+        if (isset($_GET["action"]) && ($_GET["action"] == "create"))
         {
             $this->create();
             return;
@@ -33,7 +33,7 @@ class CallController{
         $this->index();
     }
     public function create(){
-        new view("createCall");
+        new View("createCall");
     }
     public function store(array $request){
         $newCall = new Call(null, $request["room"], $request["issue"], null);

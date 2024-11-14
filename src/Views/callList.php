@@ -8,7 +8,7 @@
     <main>
 
     <div>
-        <a href="?action=create">
+        <a href='?action=create'>
             <button class="btn btn-primary" type="button">Add issue</button>
         </a>
     </div>
