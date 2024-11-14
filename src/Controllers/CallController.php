@@ -6,6 +6,18 @@ use App\Core\View;
 class CallController{
     public function __construct(){
 
+        if (isset($_Get["action"]) && ($_GET["action"] == "delete"))
+        {
+            $this->delete($_GET["id"]);
+            return;
+        }
+
+        if (isset($_Get["action"]) && ($_GET["action"] == "create"))
+        {
+            $this->create();
+            return;
+        }
+
         $this->index();
     }
     public function index(){
