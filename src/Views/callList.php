@@ -8,7 +8,7 @@
     <main>
 
     <div>
-        <a href="?action=create">
+        <a href='?action=create'>
             <button class="btn btn-primary" type="button">Add issue</button>
         </a>
     </div>
@@ -31,7 +31,7 @@
                                 <td>{$call->room}</td>
                                 <td>{$call->issue}</td>
                                 <td>{$call->dateTime}</td>
-                                <a href:'?action=delete&id={$call->id}'><i class='bi bi-trash-fill'></i></a>
+                                <td><a href='?action=delete&id={$call->id}'><i class='bi bi-trash-fill'></i></a></td>
                             </tr>";
                     }
                 ?>                
