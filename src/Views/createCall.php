@@ -1,7 +1,7 @@
 <?php
 
-require_once("/Components/layout");
-require_once("/Components/header");
+require_once("Components/layout");
+require_once("Components/header");
 
 ?>
 
