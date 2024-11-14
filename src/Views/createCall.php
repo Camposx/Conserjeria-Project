@@ -1,11 +1,11 @@
 <?php
-    require_once("Components/layout");
+    require_once("Components/layout.php");
 ?>
 
 <body>
 
 <?php
-    require_once("Components/header");
+    require_once("Components/header.php");
 ?>
 
 <main class="card">
@@ -19,11 +19,11 @@
                 </div>
                 <div class="input-group">
                     <span class="input-group-text">Issue description</span>
-                    <textarea type="text" class="form-control" area-label="With textarea" required placeholder="Description of the problem:"></textarea>
+                    <textarea type="text" class="form-control" area-label="With textarea" name="issue" required placeholder="Description of the problem:"></textarea>
                 </div>
                 <div class="input-group">
                     <span class="input-group-text">Date</span>
-                    <input type="date" class="form-control" name="date" required placeholder="Date of the call:">
+                    <input type="date" class="form-control" name="dateTime" required placeholder="Date of the call:">
                 </div>
 
                 <div class="buttons">
@@ -33,6 +33,6 @@
         </form>
     </main>
 <?php
-    require_once("Components/footer")
+    require_once("Components/footer.php")
 ?>
 </body>

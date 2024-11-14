@@ -36,7 +36,7 @@ class CallController{
         new View("createCall");
     }
     public function store(array $request){
-        $newCall = new Call(null, $request["room"], $request["issue"], null);
+        $newCall = new Call(null, $request["room"], $request["issue"], $request["dateTime"]);
         $newCall->save();
         $this->index();
     }
