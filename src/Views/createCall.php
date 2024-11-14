@@ -1,11 +1,13 @@
 <?php
-
-require_once("Components/layout");
-require_once("Components/header");
-
+    require_once("Components/layout");
 ?>
 
 <body>
+
+<?php
+    require_once("Components/header");
+?>
+
 <main class="card">
     <h2>New Call</h2>
 
