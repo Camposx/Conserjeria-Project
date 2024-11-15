@@ -11,8 +11,8 @@ class Call{
     private string $issue;
     private ?string $dateTime;
 
-    private $database;
-    private $table = "problems";
+    public $database;
+    public $table = "problems";
 
     public function __construct($id=null, $room="",$issue="", $dateTime=null){
     
