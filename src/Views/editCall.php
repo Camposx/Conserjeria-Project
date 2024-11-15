@@ -19,7 +19,7 @@
             </div>
             <div class="input-group">
                 <span class="input-group-text">Issue description</span>
-                <textarea type="text" class="form-control" area-label="With textarea" name="issue" required value='<?php echo $data["call"]->getIssue() ?>'></textarea>
+                <input type="text" class="form-control" area-label="With textarea" name="issue" required value='<?php echo $data["call"]->getIssue() ?>'></input>
             </div>
             <div class="input-group">
                 <span class="input-group-text">Date</span>
