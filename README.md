@@ -50,6 +50,15 @@ In order to run this project locally, you need:
 
 5. Access the incident system from your browser
 
+## Guide
+- In this guide you will learn how to use our project:
+
+1. In the main page you have information about the current incidents: Id, Room, Issue and the Date of the call.
+- In addition there are 2 buttons: 
+    - The Delete button (The 🗑️ emoji): Deletes the selected incident. Simple, isn't it?
+    - The Edit button (The 📝 emoji): Allows you to edit the room, issue and date of the selected incident.
+    
+
 ## Documentation
 We have used different pages that have helped us in the creation of the project. I leave the links below:
 
