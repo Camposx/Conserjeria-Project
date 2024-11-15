@@ -48,7 +48,8 @@ class CallController{
         $callDelete = new call;
         $call = $callDelete->findById($id);
         $call->destroy();
-        $this->index();
+        header(header: "Location: ./index.php");
+        exit();
     }
     public function create(){
         new View("createCall");
@@ -56,7 +57,8 @@ class CallController{
     public function store(array $request){
         $newCall = new Call(null, $request["room"], $request["issue"], $request["dateTime"]);
         $newCall->save();
-        $this->index();
+        header(header: "Location: ./index.php");
+        exit();
     }
 
     public function edit($id){
@@ -72,6 +74,7 @@ class CallController{
         $call->rename($request["room"], $request["issue"], $request["dateTime"]);
         $call->update();
     
-        $this->index();
+        header(header: "Location: ./index.php");
+        exit();
     }
 }
