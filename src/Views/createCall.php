@@ -8,30 +8,33 @@
     require_once("Components/header.php");
 ?>
 
-<main class="card">
-    <h2>New Call</h2>
-
+<main>
+    <div class="topBar">
+        <h2>New Request</h2>
         <a href="./index.php"><button type="button-cancel" id="button-cancel" class="btn btn-danger">Cancel</button></a>
-            <form action='?action=store' method="post">
-                <div class="input-group">
-                    <span class="input-group-text">Room</span>
-                    <input type="text" class="form-control" name="room" required placeholder="Write the room:">
-                </div>
-                <div class="input-group">
-                    <span class="input-group-text">Issue description</span>
-                    <input type="text" class="form-control" area-label="With textarea" name="issue" required placeholder="Description of the problem:"></input>
-                </div>
-                <div class="input-group">
-                    <span class="input-group-text">Date</span>
-                    <input type="date" class="form-control" name="dateTime" required placeholder="Date of the call:">
-                </div>
-
-                <div class="buttons">
-                    <input type="submit"  value="Create" class="btn btn-success">
-                    <input type="reset" value="Reset" class="btn btn-warning">
-                </div>
+    </div>
+    <section>
+        <form action='?action=store' method="post">
+            <div class="mb-3">
+                <label class="form-label">Room</label>
+                <input type="text" class="form-control" name="room" required placeholder="Write the room">
+            </div>
+            <div class="mb-3">
+                <label area-label="With textarea" class="form-label">Issue</label>
+                <input type="text" class="form-control" name="issue" required placeholder="Description of the problem">
+            </div>
+            <div class="mb-3">
+                <label area-label="With textarea" class="form-label">Date</label>
+                <input type="date" class="form-control" name="dateTime" required>
+            </div>
+            <div class="buttons">
+                <input type="submit"  value="Create" class="btn">
+                <input type="reset" value="Reset" class="btn">
+            </div>
         </form>
-    </main>
+    </section>
+    
+</main>
 <?php
     require_once("Components/footer.php")
 ?>
