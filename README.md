@@ -57,6 +57,11 @@ In order to run this project locally, you need:
 ## Documentation
 We have used different pages that have helped us in the creation of the project. I leave the links below:
 
+>[!TIP]
+>You can test our functions using `./vendor/bin/phpunit tests` in the terminal.
+
+![image](https://github.com/user-attachments/assets/d35188bd-2cf2-4a30-8b25-a9c7ec893e82)
+
 ### Directory Structure
 [screenshot of directory]
 
