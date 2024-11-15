@@ -20,6 +20,8 @@
                     <th scope="col">Room</th>
                     <th scope="col">Issue</th>
                     <th scope="col">Date Time</th>
+                    <th></th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -32,7 +34,7 @@
                                 <td>{$call->getIssue()}</td>
                                 <td>{$call->getDateTime()}</td>
                                 <td><a href='?action=delete&id={$call->getId()}'><i class='bi bi-trash-fill'></i></a></td>
-                                <td><a href='?action=edit&id={$call->getId()}'>Edit</a></td>
+                                <td><a href='?action=edit&id={$call->getId()}'><i class='bi bi-pencil-square'></i></a></td>
                             </tr>";
                     }
                 ?>                
