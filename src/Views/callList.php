@@ -32,7 +32,7 @@
                                 <td>{$call->getIssue()}</td>
                                 <td>{$call->getDateTime()}</td>
                                 <td><a href='?action=delete&id={$call->getId()}'><i class='bi bi-trash-fill'></i></a></td>
-                                <td><a href='?action=edit&id={$call->getId()}'>Edit</a></td>
+                                <td><a href='?action=edit&id={$call->getId()}'><i class='bi bi-pen'></i></a></td>
                             </tr>";
                     }
                 ?>                
