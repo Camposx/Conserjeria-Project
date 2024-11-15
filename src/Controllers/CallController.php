@@ -69,7 +69,7 @@ class CallController{
 
         $callUpdate = New Call;
         $call = $callUpdate->findById($id);
-        $call->rename($request["room"],$request["issue"]);
+        $call->rename( $request["room"], $request["issue"], $request["dateTime"]);
         $call->update();
     
         $this->index();

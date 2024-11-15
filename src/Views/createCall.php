@@ -19,7 +19,7 @@
                 </div>
                 <div class="input-group">
                     <span class="input-group-text">Issue description</span>
-                    <textarea type="text" class="form-control" area-label="With textarea" name="issue" required placeholder="Description of the problem:"></textarea>
+                    <input type="text" class="form-control" area-label="With textarea" name="issue" required placeholder="Description of the problem:"></input>
                 </div>
                 <div class="input-group">
                     <span class="input-group-text">Date</span>
