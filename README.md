@@ -49,10 +49,6 @@ In order to run this project locally, you need:
 4. Start the Apache and MySQL server from the XAMPP control panel.
 
 5. Access the incident system from your browser
-   
->[!TIP]
->
-
 
 ## Documentation
 We have used different pages that have helped us in the creation of the project. I leave the links below:
