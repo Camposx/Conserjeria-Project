@@ -1,3 +1,3 @@
 <footer>
-    <p> ©La Conserjería del Carmen. All Rights Reserved.</p>
+    <p> ©Málaga Waves Hotel. All Rights Reserved.</p>
 </footer>
