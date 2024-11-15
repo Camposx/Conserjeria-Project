@@ -20,6 +20,8 @@
                     <th scope="col">Room</th>
                     <th scope="col">Issue</th>
                     <th scope="col">Date Time</th>
+                    <th></th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -27,11 +29,12 @@
                     foreach($data["call"] as $call) {
                         echo "
                             <tr>
-                                <th>{$call->id}</th>
-                                <td>{$call->room}</td>
-                                <td>{$call->issue}</td>
-                                <td>{$call->dateTime}</td>
-                                <td><a href='?action=delete&id={$call->id}'><i class='bi bi-trash-fill'></i></a></td>
+                                <th>{$call->getId()}</th>
+                                <td>{$call->getRoom()}</td>
+                                <td>{$call->getIssue()}</td>
+                                <td>{$call->getDateTime()}</td>
+                                <td><a href='?action=delete&id={$call->getId()}'><i class='bi bi-trash-fill'></i></a></td>
+                                <td><a href='?action=edit&id={$call->getId()}'><i class='bi bi-pencil-square'></i></a></td>
                             </tr>";
                     }
                 ?>                
