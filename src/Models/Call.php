@@ -53,6 +53,6 @@ class Call{
     }
 
     public function save(){
-        $this->database->mysql->query("INSERT INTO {$this->table} (`room`, `issue`) VALUES('$this->room', '$this->issue')");
+        $this->database->mysql->query("INSERT INTO {$this->table} (`room`, `issue`, `dateTime`) VALUES('$this->room', '$this->issue', '$this->dateTime')");
     }
 }
