@@ -17,18 +17,18 @@ class CallTest extends TestCase{
         $newCall = new Call(null, "112", "Coment for test 1", null);
 
         //when
-        $resultGetRoom = $newCall->room;
+        $resultGetRoom = $newCall->getRoom();
 
         //then
         $this->assertEquals("112", $resultGetRoom);
     }
-    
+
     public function test_GetIssue(){
         //given 
         $newCall = new Call(null, "112", "Coment for test 2", null);
 
         //when
-        $resultGetIssue = $newCall->issue;
+        $resultGetIssue = $newCall->getIssue();
 
         //then
         $this->assertEquals("Coment for test 2", $resultGetIssue);
