@@ -6,45 +6,47 @@ header{
     align-items: center !important;
     background-color: rgb(0, 0, 58) !important;
 }
+
 .h1{
     color: rgb(236, 206, 112) !important;
     font-family: 'Cinzel';font-size: 32px !important;
 
 }
+
 BODY{
     background-color: #F5F5DC !important;
 
 }
+
 .btn{
+    justify-content: right !important;
     color: rgb(0, 0, 58) !important;
     background-color:rgb(236, 206, 112) !important;
-    font-family: 'Cinzel';font-size: 19px !important; 
+    font-family: 'Cinzel' !important;
+    font-size: 19px !important; 
     border-color: rgb(236, 206, 112) !important;
     color: rgb(0, 0, 58) ;
-    background-color:rgb(236, 206, 112);
-    font-family: 'Cinzel';font-size: 19px;
-    border-color: rgb(236, 206, 112);
     margin: 5px;
 }
+
 .btn:hover{
     background-color:rgb(0, 0, 58) !important;
     color:rgb(236, 206, 112) !important;
     border-color: black !important;
 }
-    background-color:rgb(0, 0, 58);
-    color:rgb(236, 206, 112) ;
-    border-color: black;
-}
 
 .table{
-    border-radius: 25px;
-    margin: 5px;
+    font-family: 'Cinzel';
+    border-color:rgb(236, 206, 112)  !important;
+    margin: 5px !important;
 }
 
 footer{
     text-align: center;
-    font-size: 13px;
+    font-size: 15px;
     background-color: rgb(0, 0, 58);
     color: rgb(236, 206, 112);
     padding: 3px;
+    margin-top: 10px;
+    font-family: 'Cinzel';
  }
