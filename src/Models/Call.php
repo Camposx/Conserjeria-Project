@@ -6,13 +6,13 @@ use App\Database;
 
 class Call{
 
-    public ?int $id;
-    public string $room;
-    public string $issue;
-    public ?string $dateTime;
+    private ?int $id;
+    private string $room;
+    private string $issue;
+    private ?string $dateTime;
 
-    public $database;
-    public $table = "problems";
+    private $database;
+    private $table = "problems";
 
     public function __construct($id=null, $room="",$issue="", $dateTime=null){
     
@@ -26,13 +26,11 @@ class Call{
         }
     }
 
-
     public function all(){
         $query = $this->database->mysql->query("SELECT * FROM {$this->table}");
         $callArray = $query->fetchAll();
 
         $callList = [];
-
 
         foreach($callArray as $call){
             $callItem = new Call($call["id"],$call["room"],$call["issue"],$call["dateTime"]);
@@ -54,5 +52,27 @@ class Call{
 
     public function save(){
         $this->database->mysql->query("INSERT INTO {$this->table} (`room`, `issue`, `dateTime`) VALUES('$this->room', '$this->issue', '$this->dateTime')");
+    }
+
+    public function rename($roomUpdate, $issueUpdate){
+        $this->room = $roomUpdate;
+        $this->issue = $issueUpdate;
+    }
+    
+    public function update(){
+        $this->database->mysql->query("UPDATE {$this->table} SET `room` = '{$this->room}', `issue` = '{$this->issue}' WHERE `id` = '{$this->id}'");
+    }
+    
+    public function getId(){
+        return $this->id;
+    }
+    public function getRoom(){
+        return $this->room;
+    }
+    public function getIssue(){
+        return $this->issue;
+    }
+    public function getDateTime(){
+        return $this->dateTime;
     }
 }
