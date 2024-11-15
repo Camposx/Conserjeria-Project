@@ -18,6 +18,24 @@ class CallController{
             return;
         }
 
+        if (isset($_GET["action"]) && ($_GET["action"] == "store"))
+        {
+            $this->store($_POST);
+            return;
+        }
+        
+        if (isset($_GET["action"]) && ($_GET["action"] == "edit"))
+        {
+            $this->edit($_GET["id"]);
+            return;
+        }
+        
+        if (isset($_GET["action"]) && ($_GET["action"] == "update"))
+        {
+            $this->update($_POST, $_GET["id"]);
+            return;
+        }
+        
         $this->index();
     }
     public function index(){
@@ -38,6 +56,22 @@ class CallController{
     public function store(array $request){
         $newCall = new Call(null, $request["room"], $request["issue"], $request["dateTime"]);
         $newCall->save();
+        $this->index();
+    }
+
+    public function edit($id){
+        $callEdit = new call;
+        $call = $callEdit->findById($id);
+        new View("editCall", ["call" => $call]);
+    }
+
+    public function update(array $request, $id){
+
+        $callUpdate = New Call;
+        $call = $callUpdate->findById($id);
+        $call->rename($request["room"],$request["issue"]);
+        $call->update();
+    
         $this->index();
     }
 }
