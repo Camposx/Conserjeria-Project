@@ -7,13 +7,15 @@
     ?>
     <main>
 
-    <div>
+    <div class="topBar">
+        <h2>Service Requests</h2>
+
         <a href='?action=create'>
-            <button class="btn btn-primary" type="button">Add issue</button>
+            <button class="btn btn-primary" type="button">Add request</button>
         </a>
     </div>
-
-    <table class="table">
+    <section>
+        <table class="table ">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
@@ -28,7 +30,7 @@
                 <?php
                     foreach($data["call"] as $call) {
                         echo "
-                            <tr>
+                            <tr class='tableRow'>
                                 <th>{$call->getId()}</th>
                                 <td>{$call->getRoom()}</td>
                                 <td>{$call->getIssue()}</td>
@@ -40,6 +42,9 @@
                 ?>                
             </tbody>
         </table>
+
+    </section>
+    
     </main>
     <?php
     require_once("Components/footer.php");

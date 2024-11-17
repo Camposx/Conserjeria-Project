@@ -23,7 +23,7 @@ class Database{
         $host = "localhost";
         $user = "root";
         $password = "";
-        $database = "conserjeriaproject";
+        $database = "malaga_waves_hotel_db";
         $charset = "utf-8";
 
         $options = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
