@@ -30,6 +30,8 @@ In order to run this project locally, you need:
 
   3. VSC Terminal
 
+  4. Composer
+
 ### Installation
 1. Clone this repository to your local directory:
 
@@ -51,12 +53,22 @@ In order to run this project locally, you need:
 5. Access the incident system from your browser
 
 ## Guide
-- In this guide you will learn how to use our project:
+- In this quick guide you will learn about the main functionalities of our project:
+
 
 1. In the main page you have information about the current incidents: Id, Room, Issue and the Date of the call.
-- In addition there are 2 buttons: 
-    - The Delete button (The 🗑️ emoji): Deletes the selected incident. Simple, isn't it?
-    - The Edit button (The 📝 emoji): Allows you to edit the room, issue and date of the selected incident.
+![screenshot of our main page](/public/img/indexMalagaWavesHotel.png)
+    - In addition there are 2 buttons next to each incident: 
+      - The Delete button (The 🗑️ emoji): Deletes the selected incident. Simple, isn't it?
+      - The Edit button (The 📝 emoji): Allows you to edit the room, issue and date of the selected incident.
+
+2. If you want to add a new incident, you can do it by clicking on the "Add Issue" button
+![Our new calls form ](/public/img/formulario.png)
+    - You will be redirected to a new page where you can fill in the required information: Room, Issue and Date of the call.
+      - Once you have filled in the required information, you can submit the form by clicking on the "Create" button.
+        - You will be again in the main page and see the new incident has been added.
+      - If you want to reset the form, you can do it by clicking on the "Reset" button.
+      - If you want to cancel the form, you can do it by clicking on the "Cancel" button.
     
 
 ## Documentation
