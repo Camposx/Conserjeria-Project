@@ -61,15 +61,23 @@ In order to run this project locally, you need:
     - In addition there are 2 buttons next to each incident: 
       - The Delete button (The 🗑️ emoji): Deletes the selected incident. Simple, isn't it?
       - The Edit button (The 📝 emoji): Allows you to edit the room, issue and date of the selected incident.
-
-2. If you want to add a new incident, you can do it by clicking on the "Add Issue" button
+  
+2. If you want to add a new incident, you can do it by clicking on the "Add Issue" button.
 ![Our new calls form ](/public/img/formulario.png)
     - You will be redirected to a new page where you can fill in the required information: Room, Issue and Date of the call.
       - Once you have filled in the required information, you can submit the form by clicking on the "Create" button.
         - You will be again in the main page and see the new incident has been added.
       - If you want to reset the form, you can do it by clicking on the "Reset" button.
       - If you want to cancel the form, you can do it by clicking on the "Cancel" button.
-    
+
+3. If you want to edit an incident, you can do it by clicking on the "Edit" button mentioned earlier.
+![Our edit form ](/public/img/editForm.png)
+     - You'll be redirected to a new page where you can edit the Room, Issue and Date of the call.
+        - Once you have edited the information you want, you can submit the form by clicking on the "Edit" button.
+          - You'll be again in the main page and see the edited incident has been updated.
+
+4. If you want to delete an incident, you can do it by clicking on the "Delete" button that i told you about before.
+    - Once you have clicked on the "Delete" button, the incident will be deleted INSTANTLY and you WON'T HAVE THE OPTION TO RECOVER IT.
 
 ## Documentation
 We have used different pages that have helped us in the creation of the project. I leave the links below:
