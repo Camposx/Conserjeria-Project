@@ -42,9 +42,89 @@ In order to run this project locally, you need:
 3. Import the database:
 - Open phpMyAdmin.
 
-- Create a database called "Conserjeriaproject".
+- In SQL tab u can copy the next code and it will create the database and the table with default information.
 
-- Import the Conserjeriaproyect.sql file found in the project's database folder.
+  ```
+      -- phpMyAdmin SQL Dump
+      -- version 5.2.1
+      -- https://www.phpmyadmin.net/
+      --
+      -- Host: 127.0.0.1
+      -- Generation Time: Nov 17, 2024 at 01:28 PM
+      -- Server version: 10.4.32-MariaDB
+      -- PHP Version: 8.2.12
+      
+      SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+      START TRANSACTION;
+      SET time_zone = "+00:00";
+      
+      
+      /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+      /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+      /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+      /*!40101 SET NAMES utf8mb4 */;
+      
+      --
+      -- Database: `malaga_waves_hotel_db`
+      --
+      DROP DATABASE IF EXISTS `malaga_waves_hotel_db`;
+      CREATE DATABASE IF NOT EXISTS `malaga_waves_hotel_db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+      USE `malaga_waves_hotel_db`;
+      
+      -- --------------------------------------------------------
+      
+      --
+      -- Table structure for table `problems`
+      --
+      
+      DROP TABLE IF EXISTS `problems`;
+      CREATE TABLE `problems` (
+        `id` int(11) NOT NULL,
+        `room` varchar(5) NOT NULL,
+        `issue` varchar(256) NOT NULL,
+        `dateTime` date NOT NULL
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+      
+      --
+      -- Dumping data for table `problems`
+      --
+      
+      INSERT INTO `problems` (`id`, `room`, `issue`, `dateTime`) VALUES
+      (2, '98', 'there is a rat down of the bed', '2024-11-17'),
+      (3, '101', 'Air conditioner not working', '2024-11-16'),
+      (4, '303', 'TV remote is missing', '2024-11-15'),
+      (5, '404', 'Water leakage in the bathroom', '2024-11-14'),
+      (6, '505', 'Room door lock is jammed', '2024-11-13'),
+      (7, '606', 'Lights are flickering', '2024-11-13'),
+      (8, '707', 'No towels in the room', '2024-11-12'),
+      (9, '808', 'The fridge is not cooling', '2024-11-12'),
+      (10, '909', 'WIFI is not connecting', '2024-11-11');
+      
+      --
+      -- Indexes for dumped tables
+      --
+      
+      --
+      -- Indexes for table `problems`
+      --
+      ALTER TABLE `problems`
+        ADD PRIMARY KEY (`id`);
+      
+      --
+      -- AUTO_INCREMENT for dumped tables
+      --
+      
+      --
+      -- AUTO_INCREMENT for table `problems`
+      --
+      ALTER TABLE `problems`
+        MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+      COMMIT;
+      
+      /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+      /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+      /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+  ```
 
 4. Start the Apache and MySQL server from the XAMPP control panel.
 
