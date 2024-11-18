@@ -1,8 +1,6 @@
 # Conserjeria-Project
 Welcome to the repository of the Conserjeria-Project incident management system.
 
-[screenshot of page]
-
 >[!CAUTION]
 >Please read all the points of the README in order to make good use of the project. Thank you.
 
